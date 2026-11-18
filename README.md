@@ -18,7 +18,7 @@ How it plays:
 - Quiescence search over captures and promotions, with full evasions
   when in check.
 - Evaluation is material plus piece-square tables: advancing centre
-  pawns, centralised pieces, and a safe back-rank king.
+  pawns, centralised pieces, a safe back-rank king in the middlegame, and a centralised king in the endgame.
 - Move ordering by static evaluation at the root and MVV-LVA inside
   the search.
 
