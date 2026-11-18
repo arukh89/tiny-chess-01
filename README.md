@@ -14,11 +14,14 @@ How it plays:
 - 0x88 board, full legal move generation: castling, en passant,
   promotion, check evasion.
 - Negamax alpha-beta search with iterative deepening to a fixed budget
-  of 50,000 nodes per move, with killer moves and a transposition table.
+  of 50,000 nodes per move, with killer moves, a transposition table,
+  and an in-search repetition shortcut.
 - Quiescence search over captures and promotions, with full evasions
   when in check.
 - Evaluation is material plus piece-square tables: advancing centre
-  pawns, centralised pieces, a safe back-rank king in the middlegame, and a centralised king in the endgame.
+  pawns, centralised pieces, a safe back-rank king in the middlegame,
+  a centralised king in the endgame, and separate rook and queen
+  piece-square tables.
 - Move ordering by static evaluation at the root and MVV-LVA inside
   the search.
 
